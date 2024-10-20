@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -77,7 +78,7 @@ export default function Login() {
             </button>
           </form>
           <p>
-            Belum punya akun? <a href="/register"><u>Daftar di sini</u></a>
+            Belum punya akun? <Link href="/register"><u>Daftar di sini</u></Link>
           </p>
         </div>
       </div>

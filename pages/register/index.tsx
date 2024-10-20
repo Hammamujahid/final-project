@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Register() {
   const [name, setName] = useState("");
@@ -44,9 +45,9 @@ export default function Register() {
         <h1 className="text-4xl font-bold mb-4">Registrasi</h1>
         <p>
           Sudah punya akun?{" "}
-          <a href="/login">
+          <Link href="/login">
             <u>Login di sini</u>
-          </a>
+          </Link>
         </p>
       </div>
       <div className="bg-slate-800 w-1/3 rounded-lg overflow-y-auto scrollbar-hidden">
